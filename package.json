@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/lira-lantan/boilerplate#readme",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
     "add": "^2.0.6",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",

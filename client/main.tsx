@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import Root from "./config/root";
+import { Root } from "./config/root";
 
 import "./assets/styles/style.scss";
 
