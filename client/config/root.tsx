@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SearchPage } from "../components";
+import "./root.scss";
 
 export const Root = () => {
   return (

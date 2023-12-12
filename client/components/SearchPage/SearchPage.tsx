@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import TextField from "@mui/material/TextField";
 import Search from "@mui/icons-material/Search";
 import { Link } from './Link'
+import axios from 'axios';
+import './style.scss'
 
 const MIN_SEARCH_LENGTH = 3;
 
@@ -14,7 +16,7 @@ export function SearchPage() {
     if (value.length >= MIN_SEARCH_LENGTH) {
       setYaMarketLink(`https://market.yandex.ru/search?text=${value}`);
       setWildberriesLink(
-        `https://catalog-ads.wildberries.ru/api/v6/search?keyword=${value}`
+        `https://www.wildberries.ru/catalog/0/search.aspx?search=${value}`
       );
       setOzonLink(`https://www.ozon.ru/search/?text=${value}&from_global=true`);
     } else {
@@ -22,7 +24,6 @@ export function SearchPage() {
       setWildberriesLink('');
       setOzonLink('');
     }
-
   }
 
   return (
